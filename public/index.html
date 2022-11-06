@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0"
+      data-rh="true"/>
+    
+    <title>Second Semester Exam</title>
+  </head>
+  <body id="container">
+    <div id="root"></div>
+    <script type="module" src="/src/index.jsx">
+		
+  
+import { initializeApp } from "firebase/app";
+import { GoogleAuthProvider } from "firebase/auth";
+import { getAuth, signInWithRedirect, GoogleAuthProvider, getRedirectResult, onAuthStateChanged } from "firebase/auth";
+
+
+const firebaseConfig = {
+  apiKey: "AIzaSyDrO_s3arRkVbKO7Fi2d0mjknLFAMNZ1sg",
+  authDomain: "second-semester-exam-c7b76.firebaseapp.com",
+  projectId: "second-semester-exam-c7b76",
+  storageBucket: "second-semester-exam-c7b76.appspot.com",
+  messagingSenderId: "188869066543",
+  appId: "1:188869066543:web:15ff536b7a48977c88abda"
+};
+
+
+const app = initializeApp(firebaseConfig);
+    const provider = new GoogleAuthProvider();
+    const auth = getAuth();
+
+    export { getAuth, signInWithRedirect, GoogleAuthProvider, getRedirectResult, onAuthStateChanged };
+    </script>
+  </body>
+    
+</html>
